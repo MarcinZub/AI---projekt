@@ -83,7 +83,7 @@ def uczenie_sieci(siec,iteracja=1):
 	trainX, trainY, testX, testY = ladowanie_bazy()
 	trainX, testX = konwersia_pixeli(trainX, testX)
 
-	siec.fit(trainX, trainY, epochs=iteracja, batch_size=32, verbose=0)
+	siec.fit(trainX, trainY, epochs=iteracja, batch_size=50, verbose=0)
 	return siec
 
 
